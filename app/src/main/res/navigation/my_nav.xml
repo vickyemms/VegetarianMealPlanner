@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/recipesFragment"
         android:name="com.example.foodplanner.RecipesFragment"
-        android:label="fragment_recipes"
+        android:label="Recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.foodplanner.CalendarFragment"
-        android:label="fragment_calendar"
+        android:label="Calendar"
         tools:layout="@layout/fragment_calendar" />
     <fragment
         android:id="@+id/groceryListFragment"
         android:name="com.example.foodplanner.GroceryListFragment"
-        android:label="fragment_grocery_list"
+        android:label="Grocery List"
         tools:layout="@layout/fragment_grocery_list" />
 </navigation>
