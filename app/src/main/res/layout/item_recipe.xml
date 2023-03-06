@@ -21,20 +21,24 @@
         android:id="@+id/ivRecipePhoto"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
         android:src="@drawable/baseline_food_bank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvRecipeInstructions"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRecipeName" />
 
     <TextView
         android:id="@+id/tvRecipeInstructions"
-        android:layout_width="370dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="25dp"
         android:textSize="10sp"
+        android:maxLines="10"
+        android:ellipsize="end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnAddRecipe"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ivRecipePhoto"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,11 +46,12 @@
         android:id="@+id/btnAddRecipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvRecipeInstructions"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
