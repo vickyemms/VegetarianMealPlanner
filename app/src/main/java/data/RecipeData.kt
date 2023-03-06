@@ -8,7 +8,7 @@ object RecipeData {
     val recipes = listOf(
         Recipe(
             "Pesto Pasta",
-            R.drawable.baseline_food_bank,
+            R.drawable.pasta_pesto,
             listOf(
                 Ingredient("Penne pasta", 8.0, "ounces"),
                 Ingredient("Fresh basil leaves", 2.0, "cups"),
@@ -27,7 +27,7 @@ object RecipeData {
         ),
         Recipe(
             "Tomato Soup",
-            R.drawable.baseline_food_bank,
+            R.drawable.tomato_soup,
             listOf(
                 Ingredient("Tomatoes", 6.0, "large"),
                 Ingredient("Onion", 1.0, "medium"),
@@ -46,8 +46,8 @@ object RecipeData {
                     "5. Stir in heavy cream and let cook for an additional 5 minutes. Serve hot."
         ),
         Recipe(
-            "Vegetarian Fried Rice with Tofu",
-            R.drawable.baseline_food_bank,
+            "Fried Rice with Tofu",
+            R.drawable.fried_rice_tofu,
             listOf(
                 Ingredient("Cooked rice", 4.0, "cups"),
                 Ingredient("Tofu", 8.0, "ounces"),
@@ -68,7 +68,7 @@ object RecipeData {
         ),
         Recipe(
             "Tacos",
-            R.drawable.baseline_food_bank,
+            R.drawable.tacos,
             listOf(
                 Ingredient("Taco shells", 6.0),
                 Ingredient("Ground beef", 1.0, "lb"),
@@ -86,7 +86,7 @@ object RecipeData {
         ),
         Recipe(
             "Spaghetti Bolognese",
-            R.drawable.baseline_food_bank,
+            R.drawable.spaghetti_bolognese,
             listOf(
                 Ingredient("Spaghetti", 1.0, "lb"),
                 Ingredient("Ground beef", 1.0, "lb"),
@@ -108,7 +108,7 @@ object RecipeData {
         ),
         Recipe(
             "Swedish Meatballs",
-            R.drawable.baseline_food_bank,
+            R.drawable.swedish_meatballs,
             listOf(
                 Ingredient("Ground Beef", 1.5, "lbs"),
                 Ingredient("Breadcrumbs", 1.0, "cup"),
@@ -134,7 +134,7 @@ object RecipeData {
         ),
         Recipe(
             "Pad Thai",
-            R.drawable.baseline_food_bank,
+            R.drawable.pad_thai,
             listOf(
                 Ingredient("Rice noodles", 250.0, "grams"),
                 Ingredient("Tofu", 200.0, "grams"),
@@ -162,7 +162,7 @@ object RecipeData {
         ),
         Recipe(
             "Swedish Stroganoff",
-            R.drawable.baseline_food_bank,
+            R.drawable.swedish_stroganoff,
             listOf(
                 Ingredient("Beef tenderloin", 500.0, "g"),
                 Ingredient("Salt", 1.0, "tsp"),
@@ -185,7 +185,7 @@ object RecipeData {
         ),
         Recipe(
             "Nachos",
-            R.drawable.baseline_food_bank,
+            R.drawable.nachos,
             listOf(
                 Ingredient("Tortilla chips", 1.0, "bag"),
                 Ingredient("Ground beef", 1.0, "lb"),
@@ -207,7 +207,7 @@ object RecipeData {
         ),
         Recipe(
             "Quesadilla",
-            R.drawable.baseline_food_bank,
+            R.drawable.quesadilla,
             listOf(
                 Ingredient("Tortillas", 2.0, "pieces"),
                 Ingredient("Shredded cheese", 1.5, "cups"),
@@ -230,7 +230,7 @@ object RecipeData {
         ),
         Recipe(
             "Spaghetti Carbonara",
-            R.drawable.baseline_food_bank,
+            R.drawable.spaghetti_carbonara,
             listOf(
                 Ingredient("spaghetti", 400.0, "g"),
                 Ingredient("pancetta or guanciale", 150.0, "g"),
@@ -248,7 +248,7 @@ object RecipeData {
         ),
         Recipe(
             "Grilled Cheese",
-            R.drawable.baseline_food_bank,
+            R.drawable.grilled_cheese,
             listOf(
                 Ingredient("Bread", 2.0, "slices"),
                 Ingredient("Cheese", 2.0, "slices"),
@@ -264,7 +264,7 @@ object RecipeData {
         ),
         Recipe(
             "Mac and Cheese",
-            R.drawable.baseline_food_bank,
+            R.drawable.mac_and_cheese,
             listOf(
                 Ingredient("Macaroni", 250.0, "g"),
                 Ingredient("Butter", 50.0, "g"),
@@ -283,7 +283,7 @@ object RecipeData {
         ),
         Recipe(
             "Hot Dogs",
-            R.drawable.baseline_food_bank,
+            R.drawable.hot_dogs,
             listOf(
                 Ingredient("Hot dogs", 6.0, "pieces"),
                 Ingredient("Hot dog buns", 6.0, "pieces"),
@@ -297,7 +297,7 @@ object RecipeData {
         ),
         Recipe(
             "Hamburgers and Fries",
-            R.drawable.baseline_food_bank,
+            R.drawable.hamburger_and_fries,
             listOf(
                 Ingredient("Ground beef", 1.0, "pound"),
                 Ingredient("Hamburger buns", 4.0, "pieces"),
