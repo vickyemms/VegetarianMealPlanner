@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import data.RecipeData
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,6 +38,14 @@ class RecipesFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_recipes, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val recipes = RecipeData.recipes // Load the recipe data from a data source
+        val recyclerViewRecipes = view.findViewById<RecyclerView>(R.id.recyclerViewRecipes)
+        recyclerViewRecipes.adapter = RecipeAdapter(recipes)
     }
 
     companion object {
