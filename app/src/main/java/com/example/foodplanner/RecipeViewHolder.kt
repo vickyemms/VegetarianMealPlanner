@@ -8,5 +8,5 @@ import androidx.recyclerview.widget.RecyclerView
 class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val tvRecipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
     val ivRecipePhoto: ImageView = itemView.findViewById(R.id.ivRecipePhoto)
-    val tvRecipeInstructions: TextView = itemView.findViewById(R.id.tvRecipeInstructions)
+    val tvRecipeIngredients: TextView = itemView.findViewById(R.id.tvRecipeIngredients)
 }

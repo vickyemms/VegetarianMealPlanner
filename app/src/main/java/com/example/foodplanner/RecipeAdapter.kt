@@ -14,7 +14,11 @@ class RecipeAdapter(private val recipes: List<Recipe>) : RecyclerView.Adapter<Re
         val recipe = recipes[position]
         holder.tvRecipeName.text = recipe.name
         holder.ivRecipePhoto.setImageResource(recipe.imageResourceId)
-        holder.tvRecipeInstructions.text = recipe.instructions
+        val formattedIngredients = StringBuilder()
+        for (ingredient in recipe.ingredients) {
+            formattedIngredients.append("${ingredient.amount} ${ingredient.unit} ${ingredient.name}\n")
+        }
+        holder.tvRecipeIngredients.text = formattedIngredients.toString().trimEnd()
     }
 
     override fun getItemCount() = recipes.size

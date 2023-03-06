@@ -10,14 +10,14 @@ object RecipeData {
             "Pesto Pasta",
             R.drawable.pasta_pesto,
             listOf(
-                Ingredient("Penne pasta", 8.0, "ounces"),
-                Ingredient("Fresh basil leaves", 2.0, "cups"),
-                Ingredient("Garlic", 2.0, "cloves"),
-                Ingredient("Pine nuts", 0.5, "cup"),
-                Ingredient("Olive oil", 0.5, "cup"),
-                Ingredient("Parmesan cheese", 0.5, "cup"),
-                Ingredient("Salt", 1.0, "teaspoon"),
-                Ingredient("Black pepper", 0.5, "teaspoon")
+                Ingredient("penne pasta", 8.0, "ounces of"),
+                Ingredient("basil leaves", 2.0, "cups of"),
+                Ingredient("garlic", 2.0, "cloves of"),
+                Ingredient("pine nuts", 0.5, "cups of"),
+                Ingredient("olive oil", 0.5, "cups of"),
+                Ingredient("parmesan cheese", 0.5, "cups of"),
+                Ingredient("salt", 1.0, "teaspoon of"),
+                Ingredient("black pepper", 0.5, "teaspoon of")
             ),
             "1. Cook pasta according to package instructions. Reserve 1/2 cup of pasta cooking water.\n" +
                     "2. In a food processor, combine basil, garlic, pine nuts, and Parmesan cheese. Pulse until well combined.\n" +
@@ -29,15 +29,15 @@ object RecipeData {
             "Tomato Soup",
             R.drawable.tomato_soup,
             listOf(
-                Ingredient("Tomatoes", 6.0, "large"),
-                Ingredient("Onion", 1.0, "medium"),
-                Ingredient("Garlic", 3.0, "cloves"),
-                Ingredient("Vegetable broth", 4.0, "cups"),
-                Ingredient("Butter", 2.0, "tablespoons"),
-                Ingredient("Salt", 1.0, "teaspoon"),
-                Ingredient("Sugar", 1.0, "teaspoon"),
-                Ingredient("Black pepper", 0.5, "teaspoon"),
-                Ingredient("Heavy cream", 0.5, "cup")
+                Ingredient("tomatoes", 6.0, "large"),
+                Ingredient("onion", 1.0, "medium"),
+                Ingredient("garlic", 3.0, "cloves of"),
+                Ingredient("vegetable broth", 4.0, "cups of"),
+                Ingredient("butter", 2.0, "tablespoons of"),
+                Ingredient("salt", 1.0, "teaspoon of"),
+                Ingredient("sugar", 1.0, "teaspoon of"),
+                Ingredient("black pepper", 0.5, "teaspoon of"),
+                Ingredient("heavy cream", 0.5, "cups of")
             ),
             "1. Heat olive oil in a large pot over medium heat.\n" +
                     "2. Add onion and garlic and sauté until soft and fragrant, about 5 minutes.\n" +
@@ -49,16 +49,16 @@ object RecipeData {
             "Fried Rice with Tofu",
             R.drawable.fried_rice_tofu,
             listOf(
-                Ingredient("Cooked rice", 4.0, "cups"),
-                Ingredient("Tofu", 8.0, "ounces"),
-                Ingredient("Carrots", 2.0, "medium"),
-                Ingredient("Peas", 1.0, "cup"),
-                Ingredient("Egg", 2.0),
-                Ingredient("Soy sauce", 3.0, "tablespoons"),
-                Ingredient("Green onions", 3.0, "stalks"),
-                Ingredient("Garlic", 3.0, "cloves"),
-                Ingredient("Sesame oil", 2.0, "tablespoons"),
-                Ingredient("Vegetable oil", 2.0, "tablespoons")
+                Ingredient("cooked rice", 4.0, "cups of"),
+                Ingredient("tofu", 8.0, "ounces of"),
+                Ingredient("carrots", 2.0, "medium"),
+                Ingredient("peas", 1.0, "cup of"),
+                Ingredient("eggs", 2.0, "small"),
+                Ingredient("soy sauce", 3.0, "tbsp of"),
+                Ingredient("green onions", 3.0, "stalks of"),
+                Ingredient("garlic", 3.0, "cloves of"),
+                Ingredient("sesame oil", 2.0, "tbsp of"),
+                Ingredient("vegetable oil", 2.0, "tbsp of")
             ),
             "1. Heat vegetable oil in a large skillet over medium heat. Add garlic and stir for a few seconds until fragrant.\n" +
                     "2. Add tofu and cook until lightly browned, about 5 minutes. Remove tofu from skillet.\n" +
@@ -70,14 +70,14 @@ object RecipeData {
             "Tacos",
             R.drawable.tacos,
             listOf(
-                Ingredient("Taco shells", 6.0),
-                Ingredient("Ground beef", 1.0, "lb"),
-                Ingredient("Taco seasoning", 2.0, "tbsp"),
-                Ingredient("Lettuce", 1.0, "cup"),
-                Ingredient("Tomatoes", 2.0),
-                Ingredient("Shredded cheese", 1.0, "cup"),
-                Ingredient("Sour cream", 1.0, "cup"),
-                Ingredient("Salsa", 1.0, "cup")
+                Ingredient("taco shells", 6.0, "pieces of"),
+                Ingredient("ground beef", 1.0, "lb of"),
+                Ingredient("taco seasoning", 2.0, "tbsp of"),
+                Ingredient("lettuce", 1.0, "cup of"),
+                Ingredient("tomatoes", 2.0, "large"),
+                Ingredient("shredded cheese", 1.0, "cup of"),
+                Ingredient("sour cream", 1.0, "cup of"),
+                Ingredient("salsa", 1.0, "cup of")
             ),
             "1. Brown the ground beef in a large skillet over medium-high heat.\n" +
                     "2. Add the taco seasoning and cook for another 5 minutes.\n" +
@@ -88,16 +88,16 @@ object RecipeData {
             "Spaghetti Bolognese",
             R.drawable.spaghetti_bolognese,
             listOf(
-                Ingredient("Spaghetti", 1.0, "lb"),
-                Ingredient("Ground beef", 1.0, "lb"),
-                Ingredient("Onion", 1.0),
-                Ingredient("Garlic", 2.0, "cloves"),
-                Ingredient("Tomato paste", 2.0, "tbsp"),
-                Ingredient("Crushed tomatoes", 1.0, "can"),
-                Ingredient("Red wine", 1.0, "cup"),
-                Ingredient("Oregano", 1.0, "tsp"),
-                Ingredient("Salt", 1.0, "tsp"),
-                Ingredient("Black pepper", 0.5, "tsp")
+                Ingredient("spaghetti", 1.0, "lb of"),
+                Ingredient("ground beef", 1.0, "lb of"),
+                Ingredient("onion", 1.0, "large"),
+                Ingredient("garlic", 2.0, "cloves of"),
+                Ingredient("tomato paste", 2.0, "tbsp of"),
+                Ingredient("crushed tomatoes", 1.0, "can of"),
+                Ingredient("red wine", 1.0, "cup of"),
+                Ingredient("oregano", 1.0, "tsp of"),
+                Ingredient("salt", 1.0, "tsp of"),
+                Ingredient("black pepper", 0.5, "tsp of")
             ),
             "1. Cook the spaghetti according to package instructions.\n" +
                     "2. In a large skillet, heat the olive oil over medium heat.\n" +
@@ -110,7 +110,7 @@ object RecipeData {
             "Swedish Meatballs",
             R.drawable.swedish_meatballs,
             listOf(
-                Ingredient("Ground Beef", 1.5, "lbs"),
+                Ingredient("ground Beef", 1.5, "lbs of"),
                 Ingredient("Breadcrumbs", 1.0, "cup"),
                 Ingredient("Onion, finely chopped", 1.0, "medium"),
                 Ingredient("Garlic, minced", 2.0, "cloves"),
