@@ -36,16 +36,16 @@ class RecipesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_recipes, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val recipes = RecipeData.recipes // Load the recipe data from a data source
+        val recipes = RecipeData.recipes
         val recyclerViewRecipes = view.findViewById<RecyclerView>(R.id.recyclerViewRecipes)
         recyclerViewRecipes.adapter = RecipeAdapter(recipes)
+
     }
 
     companion object {

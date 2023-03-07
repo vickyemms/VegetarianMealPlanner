@@ -2,6 +2,7 @@ package com.example.foodplanner
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class RecipeAdapter(private val recipes: List<Recipe>) : RecyclerView.Adapter<RecipeViewHolder>() {
@@ -19,6 +20,10 @@ class RecipeAdapter(private val recipes: List<Recipe>) : RecyclerView.Adapter<Re
             formattedIngredients.append("${ingredient.amount} ${ingredient.unit} ${ingredient.name}\n")
         }
         holder.tvRecipeIngredients.text = formattedIngredients.toString().trimEnd()
+
+        holder.btnAddRecipe.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "Added ingredients to grocery list", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount() = recipes.size
