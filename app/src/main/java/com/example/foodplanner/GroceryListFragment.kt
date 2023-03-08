@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import data.IngredientData
+import data.IngredientData.ingredients
 import data.RecipeData
 
 // TODO: Rename parameter arguments, choose names that match
@@ -38,7 +39,6 @@ class GroceryListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_grocery_list, container, false)
     }
 
@@ -46,7 +46,7 @@ class GroceryListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val ingredients = IngredientData.ingredients
+        var ingredients = (activity as MainActivity).ingredients
         val recyclerViewGroceryList = view.findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
         recyclerViewGroceryList.adapter = GroceryListAdapter(ingredients)
     }

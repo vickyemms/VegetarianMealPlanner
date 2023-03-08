@@ -44,7 +44,7 @@ class RecipesFragment : Fragment() {
 
         val recipes = RecipeData.recipes
         val recyclerViewRecipes = view.findViewById<RecyclerView>(R.id.recyclerViewRecipes)
-        recyclerViewRecipes.adapter = RecipeAdapter(recipes)
+        recyclerViewRecipes.adapter = RecipeAdapter(recipes, requireContext())
 
     }
 
