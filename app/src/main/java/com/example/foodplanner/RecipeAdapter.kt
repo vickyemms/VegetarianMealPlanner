@@ -14,13 +14,15 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
         val recipe = recipes[position]
-        holder.tvRecipeName.text = recipe.name
-        holder.ivRecipePhoto.setImageResource(recipe.imageResourceId)
-        val formattedIngredients = StringBuilder()
-        for (ingredient in recipe.ingredients) {
-            formattedIngredients.append("${ingredient.amount} ${ingredient.unit} ${ingredient.name}\n")
-        }
-        holder.tvRecipeIngredients.text = formattedIngredients.toString().trimEnd()
+        holder.bind(recipe)
+
+//        holder.tvRecipeName.text = recipe.name
+//        holder.ivRecipePhoto.setImageResource(recipe.imageResourceId)
+//        val formattedIngredients = StringBuilder()
+//        for (ingredient in recipe.ingredients) {
+//            formattedIngredients.append("${ingredient.amount} ${ingredient.unit} ${ingredient.name}\n")
+//        }
+//        holder.tvRecipeIngredients.text = formattedIngredients.toString().trimEnd()
 
         holder.btnAddRecipe.setOnClickListener {
             for (ingredient in recipe.ingredients) {
