@@ -17,15 +17,31 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
         holder.bind(recipe)
 
         holder.btnAddRecipe.setOnClickListener {
-            for (ingredient in recipe.ingredients) {
-                if(ingredient in (context as MainActivity).ingredients){
-                    ingredient.increaseAmount(ingredient.originalAmount)
-                } else {
-                    (context).ingredients.add(ingredient)
+            val ingredientsList = (context as MainActivity).ingredients
+
+            for (recipeIngredient in recipe.ingredients) {
+                var foundIngredient = false
+
+                // Check if the ingredient is already in the list
+                for (listIngredient in ingredientsList) {
+                    if (recipeIngredient.name == listIngredient.name) {
+                        // If the ingredient is already in the list, increase the amount
+                        listIngredient.increaseAmount(recipeIngredient.originalAmount)
+                        foundIngredient = true
+                        break
+                    }
+                }
+
+                // If the ingredient is not already in the list, add it
+                if (!foundIngredient) {
+                    ingredientsList.add(recipeIngredient)
                 }
             }
+
             Toast.makeText(holder.itemView.context, "Added ${recipe.name} to grocery list", Toast.LENGTH_SHORT).show()
         }
+
+
     }
 
     override fun getItemCount() = recipes.size
