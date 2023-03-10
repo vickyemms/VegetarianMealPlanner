@@ -34,7 +34,8 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
 
                 // If the ingredient is not already in the list, add it
                 if (!foundIngredient) {
-                    ingredientsList.add(recipeIngredient)
+                    val duplicatedIngredient = recipeIngredient.copy()
+                    ingredientsList.add(duplicatedIngredient)
                 }
             }
 
