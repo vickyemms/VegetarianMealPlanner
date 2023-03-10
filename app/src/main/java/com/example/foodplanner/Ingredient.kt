@@ -4,6 +4,7 @@ data class Ingredient(
     val name: String,
     var amount: Double,
     val unit: String = "",
+    val foodCategory: String,
     val originalAmount: Double = amount)
 
 {

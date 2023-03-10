@@ -44,6 +44,13 @@ class GroceryListFragment : Fragment() {
 
         var ingredients = (activity as MainActivity).ingredients
         val recyclerViewGroceryList = view.findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
+
+        val customOrder = listOf("vegetable", "fruit", "bread", "dairy", "vegetarian",
+            "meat", "frozen", "mexican", "asian", "spice", "canned",
+            "pasta", "rice", "condiment", "baking", "oil")
+
+        ingredients.sortBy { customOrder.indexOf(it.foodCategory) }
+
         recyclerViewGroceryList.adapter = GroceryListAdapter(ingredients)
     }
 
