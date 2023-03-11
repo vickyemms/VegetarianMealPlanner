@@ -54,7 +54,6 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
 
             val foundAtHomeHeader = TextView(holder.itemView.context)
             foundAtHomeHeader.text = "   Usually found at home"
-            foundAtHomeHeader.setTextColor(Color.BLACK)
             foundAtHomeHeader.textSize = 18F
             layout.addView(foundAtHomeHeader)
 
