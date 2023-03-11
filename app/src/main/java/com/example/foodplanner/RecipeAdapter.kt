@@ -27,7 +27,6 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
             val builder = AlertDialog.Builder(holder.itemView.context)
             builder.setTitle("Add Ingredients")
 
-            // Separate the ingredients into two lists based on whether they are found at home or not
             val foundAtHomeIngredients = mutableListOf<Ingredient>()
             val notFoundAtHomeIngredients = mutableListOf<Ingredient>()
             recipe.ingredients.forEach { ingredient ->
@@ -53,7 +52,6 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
                 layout.addView(checkbox)
             }
 
-            // Add the "Usually found at home" header
             val foundAtHomeHeader = TextView(holder.itemView.context)
             foundAtHomeHeader.text = "   Usually found at home"
             foundAtHomeHeader.setTextColor(Color.BLACK)

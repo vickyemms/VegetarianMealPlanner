@@ -33,7 +33,7 @@ object RecipeData {
                     "4. Add the garlic, ginger, carrots, chili pepper, cumin, garam masala and turmeric and cook for about 3-4 minutes.\n" +
                     "5. Heat up 6 dl of water and add the red lentils and the water. Let it cook for about 20 minutes. Add salt and black pepper. \n" +
                     "6. Add the chopped tomatoes and coconut milk. Squeeze half a lime to the mix. Let it simmer for 10 minutes.\n" +
-                    "5. Serve with the cooked rice."
+                    "7. Serve with the cooked rice."
         ),
         Recipe(
             "Chickpea Curry",
@@ -54,11 +54,13 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up olive oil and start cooking the rice.  \n" +
+                    "2. Cut and chop the red onion, garlic, ginger, and chili pepper. \n" +
+                    "3. Add the onions and cook until tender for about 2-3 minutes.\n" +
+                    "4. Add the garlic, ginger, chili pepper, cumin, garam masala, turmeric and paprika and cook for about 3-4 minutes.\n" +
+                    "5. Add the crushed tomatoes, coconut milk and chickpeas and cook for about 7 minutes. \n" +
+                    "6. Salt to taste.\n" +
+                    "7. Serve with rice."
         ),
         Recipe(
             "Fried Rice with Tofu",
@@ -72,11 +74,11 @@ object RecipeData {
                 Ingredient("Salt", 1.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up olive oil and start cooking the rice. \n" +
+                    "2. Cut up the tofu. \n" +
+                    "3. Add the frozen vegetables, tofu, lemon pepper and salt.\n" +
+                    "4. Add the rice and soy sauce when it's done cooking and mix it add together.\n" +
+                    "5. Serve."
         ),
         Recipe(
             "Noodle Stir Fry with Tofu",
@@ -90,11 +92,11 @@ object RecipeData {
                 Ingredient("Salt", 1.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up olive oil and start cooking the noodles. \n" +
+                    "2. Cut up the tofu. \n" +
+                    "3. Add the frozen vegetables, tofu, lemon pepper and salt.\n" +
+                    "4. Add the noodles and soy sauce when it's done cooking and mix it add together.\n" +
+                    "5. Serve."
         ),
         Recipe(
             "Nachos",
@@ -117,11 +119,11 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the olive oil and chop the red onion, tomato and cucumber. \n" +
+                    "2. Add the veggie meat, beans, cumin, garlic powder, oregano, paprika and salt. Let cook for about 8 minutes. \n" +
+                    "3. Add nacho chips to a plate and put the veggie meat on the chips. Sprinkle cheese on top.\n" +
+                    "4. Add the cut up vegetables, corn, sour cream and salsa to the nachos.\n" +
+                    "5. Serve."
         ),
         Recipe(
             "Tacos",
@@ -144,11 +146,11 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the olive oil and chop the red onion, tomato and cucumber. \n" +
+                    "2. Add the veggie meat, beans, cumin, garlic powder, oregano, paprika and salt. Let cook for about 8 minutes. \n" +
+                    "3. Add tortilla to a plate and put the veggie meat on it. Sprinkle cheese on top.\n" +
+                    "4. Add the cut up vegetables, corn, sour cream and salsa to the tortilla and roll it up.\n" +
+                    "5. Serve."
         ),
         Recipe(
             "Quesadilla",
@@ -172,11 +174,13 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the olive oil and chop the onion, red bell pepper and cabbage. \n" +
+                    "2. Add the onions and cook until tender for about 2-3 minutes. \n" +
+                    "3. Add the red bell pepper and cabbage and cook 2 more minutes.\n" +
+                    "4. Add the corn, beans, spinach, cumin, garlic powder, oregano, paprika and salt. Cook until soft.\n" +
+                    "5. Add the sour cream and cheese and mix together.\n" +
+                    "6. Add the mix to a tortilla, fold it and put it in the oven 8 minutes on each side.\n" +
+                    "7. Serve with salsa on top."
         ),
         Recipe(
             "Chili sin Carne",
@@ -196,11 +200,11 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the olive oil and start cooking the rice. \n" +
+                    "2. Cut up the onion, garlic and yellow bell pepper. Add it to the pan and cook for about 2-3 minutes. \n" +
+                    "3. Add the veggie meat, beans, cumin, paprika, black pepper and salt to the mix and cook for about 5 minutes.\n" +
+                    "4. Add the crushed tomatoes and let simmer for about 5 minutes.\n" +
+                    "5. Add parsley and serve with rice."
         ),
         Recipe(
             "Chickpea Salad",
