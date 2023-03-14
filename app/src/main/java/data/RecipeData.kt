@@ -218,16 +218,19 @@ object RecipeData {
                 Ingredient("Fusilli", 250.0, "g", "pasta", false),
                 Ingredient("Chickpeas", 600.0, "g", "canned", false),
                 Ingredient("Feta cheese", 150.0, "g", "dairy", false),
+                Ingredient("Salad dressing", 80.0, "g", "condiment", false),
                 Ingredient("Garlic powder", 1.0, "tsp", "spice", true),
                 Ingredient("Paprika", 2.0, "tsp", "spice", true),
                 Ingredient("Salt", 2.0, "tsp", "spice", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Preheat oven on 225 celsius. Drain and wash the chickpeas. Add them to the baking sheet with salt, garlic powder and paprika. \n" +
+                    "2.  Add oil and mix together. Put in the oven for about 20 minutes.\n" +
+                    "3. Boil water and add pasta and salt to it. Cook according to instructions.\n" +
+                    "4. Chop and cut the romaine lettuce, tomatoes, cucumber, avocado and carrots.\n" +
+                    "5. Cut the feta into smaller cubes. \n" +
+                    "6. Add all the vegetables, pasta, chickpeas, cheese and dressing and mix together.\n" +
+                    "7. Serve."
         ),
         Recipe(
             "Meatballs and boiled Potatoes",
@@ -241,11 +244,11 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Cut the potatoes in to smaller cubes and bring them to a boil for about 15 minutes. Salt. \n" +
+                    "2. Fry the meatballs in olive oil for about 10-15 minutes. \n" +
+                    "3. Cut and chop the tomatoes and cucumber.\n" +
+                    "4. Add the potatoes, meatballs, vegetables and sour cream to the plate.\n" +
+                    "5. Serve."
         ),
         Recipe(
             "Stroganoff",
@@ -261,11 +264,13 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Pre heat the pan and add oil. \n" +
+                    "2. Start cooking the rice. \n" +
+                    "3. Cut and chop the onion and falu sausage. \n" +
+                    "4. Add the onion and cook until tender. Add the sausage and cook for about 5 minutes.\n" +
+                    "5. Add tomato paste and cook for about 2-3 minutes.\n" +
+                    "6. Add the heavy cream, soy sauce, salt and pepper. Bring to a boil and let simmer for about 5 minutes.\n" +
+                    "7. Serve."
         ),
         Recipe(
             "Chickpea Paprikash",
@@ -283,11 +288,14 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the pan and add oil. \n" +
+                    "1. Boil water and add pasta and salt. Cook according to instructions. \n" +
+                    "2. Cut and chop the onion, tomato and red bell pepper. \n" +
+                    "3. Add the onion and paprika and cook until tender for about 2-3 minutes.\n" +
+                    "4. Add tomato and red bell pepper and cook until soft for about 2-3 minutes.\n" +
+                    "5. Add about 2 dl water, chickpeas, salt and pepper and cook for about 15 minutes.\n" +
+                    "6. Mix the sour cream and flour and add it to the stew.\n" +
+                    "7. Serve with pasta"
         ),
         Recipe(
             "Chicken Paprikash",
@@ -305,11 +313,14 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the pan and add oil. \n" +
+                    "1. Boil water and add pasta and salt. Cook according to instructions. \n" +
+                    "2. Cut and chop the onion, tomato, red bell pepper and chicken. \n" +
+                    "3. Add the onion and paprika and cook until tender for about 2-3 minutes.\n" +
+                    "4. Add tomato and red bell pepper and cook until soft for about 2-3 minutes.\n" +
+                    "5. Add about 2 dl water, chicken, salt and pepper and cook for about 20 minutes.\n" +
+                    "6. Mix the sour cream and flour and add it to the stew.\n" +
+                    "7. Serve with pasta"
         ),
         Recipe(
             "Spaghetti Bolognese",
@@ -324,11 +335,13 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the pan and add oil. \n" +
+                    "2. Boil water and add pasta and salt. Cook according to instructions. \n" +
+                    "3. Add veggie meat, salt and black pepper. Cook for about 7 minutes.\n" +
+                    "4. Add pasta sauce and let it simmer for about 5 minutes.\n" +
+                    "4. Add pasta and bolognese to a plate.\n" +
+                    "4. Top it off with ketchup and cheese.\n" +
+                    "5. Serve"
         ),
         Recipe(
             "Tagliatelle with Pesto",
@@ -343,11 +356,11 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the pan and add oil. \n" +
+                    "2. Boil water and add pasta and salt. \n" +
+                    "3. Cut and chop carrot, broccoli and zucchini. Add salt and black pepper.\n" +
+                    "4. Mix the pasta and vegetables with pesto.\n" +
+                    "5. Serve."
         ),
         Recipe(
             "Veggie burger with Fries",
@@ -368,11 +381,15 @@ object RecipeData {
                 Ingredient("Salt", 2.0, "tsp", "baking", true),
                 Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
             ),
-            "1. Do this \n" +
-                    "2. Do this \n" +
-                    "3. Do this\n" +
-                    "4. Do this\n" +
-                    "5. Do this"
+            "1. Heat up the pan and add oil. \n" +
+                    "2. Preheat oven to 225 celsius and add fries and burger bun to the baking sheet. \n" +
+                    "3. Put fries in oven for 20 minutes, burgers for about 5 minutes.\n" +
+                    "4. Cut and chop red onion, tomato, and romaine lettuce.\n" +
+                    "4. Add veggie patties, garlic powder, paprika, black pepper and salt to the pan.\n" +
+                    "4. Take out the buns and put ketchup, mustard and hamburger dressing on both sides. \n" +
+                    "4. Add the veggies and the cheese. \n" +
+                    "4. Add the pattie to the burger and take out the fries from the oven. \n" +
+                    "5. Serve"
         )
     )
 
