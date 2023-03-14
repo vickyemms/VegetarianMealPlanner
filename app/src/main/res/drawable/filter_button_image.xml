@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" >
+        <layer-list>
+            <item android:drawable="@drawable/gray_background"/>
+            <item android:drawable="@drawable/arrow_drop_down_24"/>
+        </layer-list>
+    </item>
+    <item android:state_selected="false">
+        <layer-list>
+            <item android:drawable="@drawable/gray_background"/>
+            <item android:drawable="@drawable/arrow_drop_up_24"/>
+        </layer-list>
+    </item>
+</selector>
