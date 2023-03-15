@@ -6,5 +6,5 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 class GroceryListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    val tvGroceryListIngredient: TextView = itemView.findViewById(R.id.tvGroceryListIngredient)
+    val tvGrocery: TextView = itemView.findViewById(R.id.tvGrocery)
 }

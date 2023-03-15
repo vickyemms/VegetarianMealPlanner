@@ -32,21 +32,22 @@
         android:layout_marginEnd="5dp"
         android:src="@drawable/baseline_food_bank"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvRecipeIngredients"
+        app:layout_constraintEnd_toStartOf="@+id/tvRecipeCategories"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRecipeName" />
 
     <TextView
-        android:id="@+id/tvRecipeIngredients"
+        android:id="@+id/tvRecipeCategories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
         android:ellipsize="end"
         android:maxWidth="120dp"
         android:maxLines="11"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Hungarian, Vegetarian, Healthy"
+        android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/btnAddRecipe"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ivRecipePhoto"
@@ -63,7 +64,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tvRecipeIngredients" />
+        app:layout_constraintStart_toEndOf="@+id/tvRecipeCategories" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

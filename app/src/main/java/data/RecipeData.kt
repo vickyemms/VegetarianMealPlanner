@@ -9,6 +9,9 @@ object RecipeData {
         Recipe(
             "Daal",
             R.drawable.daal,
+            "Asian",
+            "Vegetarian",
+            "Healthy",
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Garlic", 3.0, "cloves of", "vegetable", false),
@@ -38,6 +41,9 @@ object RecipeData {
         Recipe(
             "Chickpea Curry",
             R.drawable.chickpea_curry,
+            "Asian",
+            "Vegetarian",
+            "Healthy",
             listOf(
                 Ingredient("Red onion", 1.0, "", "vegetable", false),
                 Ingredient("Garlic", 2.0, "cloves of", "vegetable", false),
@@ -65,6 +71,9 @@ object RecipeData {
         Recipe(
             "Fried Rice with Tofu",
             R.drawable.fried_rice_tofu,
+            "Asian",
+            "Vegetarian",
+            "Healthy",
             listOf(
                 Ingredient("Frozen vegetables", 450.0, "g", "frozen", false),
                 Ingredient("Tofu", 400.0, "g", "vegetarian", false),
@@ -83,6 +92,9 @@ object RecipeData {
         Recipe(
             "Noodle Stir Fry with Tofu",
             R.drawable.noodle_stir_fry,
+            "Asian",
+            "Vegetarian",
+            "Neutral",
             listOf(
                 Ingredient("Frozen vegetables", 450.0, "g", "frozen", false),
                 Ingredient("Tofu", 400.0, "g", "vegetarian", false),
@@ -101,6 +113,9 @@ object RecipeData {
         Recipe(
             "Nachos",
             R.drawable.nachos,
+            "Mexican",
+            "Vegetarian",
+            "Neutral",
             listOf(
                 Ingredient("Red onion", 0.25, "", "vegetable", false),
                 Ingredient("Tomato", 1.0, "", "vegetable", false),
@@ -128,6 +143,9 @@ object RecipeData {
         Recipe(
             "Tacos",
             R.drawable.tacos,
+            "Mexican",
+            "Vegetarian",
+            "Neutral",
             listOf(
                 Ingredient("Red onion", 0.25, "", "vegetable", false),
                 Ingredient("Tomato", 1.0, "", "vegetable", false),
@@ -155,6 +173,9 @@ object RecipeData {
         Recipe(
             "Quesadilla",
             R.drawable.quesadilla,
+            "Mexican",
+            "Vegetarian",
+            "Healthy",
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Red bell pepper", 1.0, "", "vegetable", false),
@@ -185,6 +206,9 @@ object RecipeData {
         Recipe(
             "Chili sin Carne",
             R.drawable.chili_sin_carne,
+            "Mexican",
+            "Vegetarian",
+            "Healthy",
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Garlic", 1.0, "cloves of", "vegetable", false),
@@ -207,8 +231,39 @@ object RecipeData {
                     "5. Add parsley and serve with rice."
         ),
         Recipe(
+            "Falafel with Pita Bread",
+            R.drawable.falafel_with_pita_bread,
+            "Middle Eastern",
+            "Vegetarian",
+            "Neutral",
+            listOf(
+                Ingredient("Tomato", 1.0, "", "vegetable", false),
+                Ingredient("Garlic", 2.0, "cloves of", "vegetable", false),
+                Ingredient("Red bell pepper", 1.0, "", "vegetable", false),
+                Ingredient("Cucumber", 0.5, "", "vegetable", false),
+                Ingredient("Lime", 0.5, "", "fruit", false),
+                Ingredient("Sour cream", 2.0, "dl", "dairy", false),
+                Ingredient("Pita bread", 4.0, "", "bread", false),
+                Ingredient("Fries", 0.5, "kg", "frozen", false),
+                Ingredient("Falafel", 400.0, "g", "frozen", false),
+                Ingredient("Salt", 2.0, "tsp", "baking", true),
+                Ingredient("Olive oil", 2.0, "tbsp", "oil", true)
+            ),
+            "1. Heat up the pan and add oil. \n" +
+                    "2. Preheat oven to 225 celsius and add fries and pita bread to the baking sheet. \n" +
+                    "3. Put fries in oven for 20 minutes, pita bead for about 7 minutes.\n" +
+                    "4. Cut and chop the tomato and red bell pepper.\n" +
+                    "5. Add the falafel to the pan.\n" +
+                    "6. Add sour cream and salt to a bowl and squeeze the lime into it. Grate the garlic and cucumber into the bowl and mix.\n" +
+                    "7. Take out the pita bread and put the tzatziki sour, vegetables, falafel into the bread. \n" +
+                    "8. Take out the fries from the oven and serve."
+        ),
+        Recipe(
             "Chickpea Salad",
             R.drawable.chickpea_salad,
+            "Mediterranean",
+            "Vegetarian",
+            "Healthy",
             listOf(
                 Ingredient("Romaine lettuce", 90.0, "g", "vegetable", false),
                 Ingredient("Tomato", 1.0, "", "vegetable", false),
@@ -235,6 +290,9 @@ object RecipeData {
         Recipe(
             "Meatballs and boiled Potatoes",
             R.drawable.meatballs_and_boiled_potatoes,
+            "Swedish",
+            "Pork",
+            "Unhealthy",
             listOf(
                 Ingredient("Tomato", 1.0, "", "vegetable", false),
                 Ingredient("Cucumber", 0.5, "", "vegetable", false),
@@ -253,6 +311,9 @@ object RecipeData {
         Recipe(
             "Stroganoff",
             R.drawable.stroganoff,
+            "Swedish",
+            "Pork",
+            "Unhealthy",
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Falu sausage", 500.0, "g", "meat", false),
@@ -275,6 +336,9 @@ object RecipeData {
         Recipe(
             "Chickpea Paprikash",
             R.drawable.chickpea_paprikash,
+            "Hungarian",
+            "Vegetarian",
+            "Neutral",
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Tomato", 2.0, "", "vegetable", false),
@@ -300,6 +364,9 @@ object RecipeData {
         Recipe(
             "Chicken Paprikash",
             R.drawable.chicken_paprikash,
+            "Hungarian",
+            "Chicken",
+            "Neutral",
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Tomato", 2.0, "", "vegetable", false),
@@ -325,6 +392,9 @@ object RecipeData {
         Recipe(
             "Spaghetti Bolognese",
             R.drawable.spaghetti_bolognese,
+            "Italian",
+            "Vegetarian",
+            "Neutral",
             listOf(
                 Ingredient("Veggie meat", 300.0, "g", "frozen", false),
                 Ingredient("Pasta sauce", 400.0, "g", "pasta", false),
@@ -346,6 +416,9 @@ object RecipeData {
         Recipe(
             "Tagliatelle with Pesto",
             R.drawable.tagliatelle_with_pesto,
+            "Italian",
+            "Vegetarian",
+            "Neutral",
             listOf(
                 Ingredient("Carrot", 2.0, "", "vegetable", false),
                 Ingredient("Broccoli", 1.0, "", "vegetable", false),
@@ -365,6 +438,9 @@ object RecipeData {
         Recipe(
             "Veggie burger with Fries",
             R.drawable.veggie_burger_and_fries,
+            "American",
+            "Vegetarian",
+            "Unhealthy",
             listOf(
                 Ingredient("Red onion", 0.25, "", "vegetable", false),
                 Ingredient("Tomato", 1.0, "", "vegetable", false),

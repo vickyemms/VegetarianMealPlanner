@@ -23,7 +23,7 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
         holder.bind(recipe)
 
         holder.btnAddRecipe.setOnClickListener {
-            val groceryList = (context as MainActivity).ingredients
+            val groceryList = (context as MainActivity).groceryList
             val builder = AlertDialog.Builder(holder.itemView.context)
             builder.setTitle("Add Ingredients")
 

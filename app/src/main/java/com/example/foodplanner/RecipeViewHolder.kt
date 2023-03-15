@@ -1,18 +1,16 @@
 package com.example.foodplanner
 
 import android.content.Intent
-import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 
 class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val tvRecipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
     val ivRecipePhoto: ImageView = itemView.findViewById(R.id.ivRecipePhoto)
-    val tvRecipeIngredients: TextView = itemView.findViewById(R.id.tvRecipeIngredients)
+    val tvRecipeCategories: TextView = itemView.findViewById(R.id.tvRecipeCategories)
     val btnAddRecipe: Button = itemView.findViewById(R.id.btnAddRecipe)
 
 
@@ -34,10 +32,6 @@ class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         itemView.tag = recipe
         tvRecipeName.text = recipe.name
         ivRecipePhoto.setImageResource(recipe.imageResourceId)
-        val formattedIngredients = StringBuilder()
-        for (ingredient in recipe.ingredients) {
-            formattedIngredients.append("${ingredient.amount} ${ingredient.unit} ${ingredient.name}\n")
-        }
-        tvRecipeIngredients.text = formattedIngredients.toString().trimEnd()
+        tvRecipeCategories.text = recipe.toStringFilters()
     }
 }
