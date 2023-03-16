@@ -30,7 +30,7 @@ class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             intent.putExtra("RECIPE_NAME", recipe.name)
             intent.putExtra("RECIPE_PHOTO", recipe.imageResourceId)
             intent.putExtra("RECIPE_INSTRUCTIONS", recipe.instructions)
-            intent.putExtra("RECIPE_INGREDIENTS", recipe.ingredients.joinToString(""))
+            intent.putExtra("RECIPE_INGREDIENTS", recipe.ingredients.joinToString("\n"))
 
             // Launch the activity using the intent
             itemView.context.startActivity(intent)

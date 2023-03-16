@@ -49,6 +49,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/ivRecipePhotoDetail" />
 
             <TextView
+                android:id="@+id/tvRecipePortionsDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="(4 portions)"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecipeInstructionsDetail" />
+
+            <TextView
                 android:id="@+id/tvRecipeIngredientsDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,7 +67,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Ingredients"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvRecipeInstructionsDetail" />
+                app:layout_constraintTop_toBottomOf="@+id/tvRecipePortionsDetail" />
 
         </LinearLayout>
 

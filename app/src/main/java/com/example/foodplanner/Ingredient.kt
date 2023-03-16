@@ -10,8 +10,14 @@ data class Ingredient(
 
 {
     override fun toString(): String {
-        return "$amount $unit $name\n"
+        val amountString = if (amount == amount.toInt().toDouble()) {
+            amount.toInt().toString()
+        } else {
+            amount.toString()
+        }
+        return "$amountString $unit $name"
     }
+
 
     fun increaseAmount(increment: Double){
         amount += increment

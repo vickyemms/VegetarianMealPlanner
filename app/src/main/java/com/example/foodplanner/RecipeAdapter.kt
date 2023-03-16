@@ -39,7 +39,7 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
 
             // Create an AlertDialog.Builder to display the list of ingredients
             val builder = AlertDialog.Builder(holder.itemView.context)
-            builder.setTitle("Add Ingredients")
+            builder.setTitle("Add Ingredients (4 portions)")
 
             // Split the recipe ingredients into those found at home and those not found at home
             val foundAtHomeIngredients = mutableListOf<Ingredient>()
