@@ -43,7 +43,7 @@ class GroceryListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Get the groceryList from the MainActivity.
-        var groceryList = (activity as MainActivity).groceryList
+        val groceryList = (activity as MainActivity).groceryList
 
         // Find the RecyclerView in the layout.
         val recyclerViewGroceryList = view.findViewById<RecyclerView>(R.id.recyclerViewGroceryList)

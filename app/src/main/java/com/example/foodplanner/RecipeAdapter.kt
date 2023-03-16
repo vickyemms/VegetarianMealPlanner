@@ -62,8 +62,7 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
             // Add a checkbox for each ingredient not found at home
             notFoundAtHomeIngredients.forEach { ingredient ->
                 val checkbox = CheckBox(holder.itemView.context)
-                checkbox.text =
-                    ingredient.amount.toString() + " " + ingredient.unit + " " + ingredient.name
+                checkbox.text = ingredient.toString()
                 checkbox.tag = ingredient
                 checkbox.isChecked = true
                 ingredientCheckboxes.add(checkbox)
@@ -72,15 +71,14 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
 
             // Add a header for the ingredients found at home
             val foundAtHomeHeader = TextView(holder.itemView.context)
-            foundAtHomeHeader.text = "   Usually found at home"
+            foundAtHomeHeader.text = context.getString(R.string.found_at_home_header)
             foundAtHomeHeader.textSize = 18F
             layout.addView(foundAtHomeHeader)
 
             // Add a checkbox for each ingredient found at home
             foundAtHomeIngredients.forEach { ingredient ->
                 val checkbox = CheckBox(holder.itemView.context)
-                checkbox.text =
-                    ingredient.amount.toString() + " " + ingredient.unit + " " + ingredient.name
+                checkbox.text = ingredient.toString()
                 checkbox.tag = ingredient
                 checkbox.isChecked = false
                 ingredientCheckboxes.add(checkbox)

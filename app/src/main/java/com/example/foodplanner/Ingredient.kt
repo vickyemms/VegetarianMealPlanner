@@ -16,15 +16,4 @@ data class Ingredient(
     fun increaseAmount(increment: Double){
         amount += increment
     }
-
-    override fun equals(other: Any?): Boolean {
-        if (other == null || other !is Ingredient) {
-            return false
-        }
-        return this.name == other.name
-    }
-
-    override fun hashCode(): Int {
-        return name.hashCode()
-    }
 }
