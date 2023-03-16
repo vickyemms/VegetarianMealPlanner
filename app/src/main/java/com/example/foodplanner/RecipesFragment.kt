@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import data.RecipeData
 
@@ -45,7 +43,10 @@ class RecipesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Get the list of recipes from RecipeData
         val recipes = RecipeData.recipes
+
+        // Find the RecyclerView in the layout and set its adapter to a new instance of RecipeAdapter
         val recyclerViewRecipes = view.findViewById<RecyclerView>(R.id.recyclerViewRecipes)
         recyclerViewRecipes.adapter = RecipeAdapter(recipes, requireContext())
 

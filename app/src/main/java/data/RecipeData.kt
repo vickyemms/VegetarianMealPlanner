@@ -8,7 +8,7 @@ object RecipeData {
     val recipes = listOf(
         Recipe(
             "Daal",
-            R.drawable.daal,
+            R.drawable.recipe_daal,
             "Asian",
             "Vegetarian",
             "Healthy",
@@ -40,7 +40,7 @@ object RecipeData {
         ),
         Recipe(
             "Chickpea Curry",
-            R.drawable.chickpea_curry,
+            R.drawable.recipe_chickpea_curry,
             "Asian",
             "Vegetarian",
             "Healthy",
@@ -70,7 +70,7 @@ object RecipeData {
         ),
         Recipe(
             "Fried Rice with Tofu",
-            R.drawable.fried_rice_tofu,
+            R.drawable.recipe_fried_rice_tofu,
             "Asian",
             "Vegetarian",
             "Healthy",
@@ -91,7 +91,7 @@ object RecipeData {
         ),
         Recipe(
             "Noodle Stir Fry with Tofu",
-            R.drawable.noodle_stir_fry,
+            R.drawable.recipe_noodle_stir_fry,
             "Asian",
             "Vegetarian",
             "Neutral",
@@ -112,7 +112,7 @@ object RecipeData {
         ),
         Recipe(
             "Nachos",
-            R.drawable.nachos,
+            R.drawable.recipe_nachos,
             "Mexican",
             "Vegetarian",
             "Neutral",
@@ -142,7 +142,7 @@ object RecipeData {
         ),
         Recipe(
             "Tacos",
-            R.drawable.tacos,
+            R.drawable.recipe_tacos,
             "Mexican",
             "Vegetarian",
             "Neutral",
@@ -172,7 +172,7 @@ object RecipeData {
         ),
         Recipe(
             "Quesadilla",
-            R.drawable.quesadilla,
+            R.drawable.recipe_quesadilla,
             "Mexican",
             "Vegetarian",
             "Healthy",
@@ -205,7 +205,7 @@ object RecipeData {
         ),
         Recipe(
             "Chili sin Carne",
-            R.drawable.chili_sin_carne,
+            R.drawable.recipe_chili_sin_carne,
             "Mexican",
             "Vegetarian",
             "Healthy",
@@ -232,7 +232,7 @@ object RecipeData {
         ),
         Recipe(
             "Falafel with Pita Bread",
-            R.drawable.falafel_with_pita_bread,
+            R.drawable.recipe_falafel_with_pita_bread,
             "Middle Eastern",
             "Vegetarian",
             "Neutral",
@@ -260,7 +260,7 @@ object RecipeData {
         ),
         Recipe(
             "Chickpea Salad",
-            R.drawable.chickpea_salad,
+            R.drawable.recipe_chickpea_salad,
             "Mediterranean",
             "Vegetarian",
             "Healthy",
@@ -289,7 +289,7 @@ object RecipeData {
         ),
         Recipe(
             "Meatballs and boiled Potatoes",
-            R.drawable.meatballs_and_boiled_potatoes,
+            R.drawable.recipe_meatballs_and_boiled_potatoes,
             "Swedish",
             "Pork",
             "Unhealthy",
@@ -310,7 +310,7 @@ object RecipeData {
         ),
         Recipe(
             "Stroganoff",
-            R.drawable.stroganoff,
+            R.drawable.recipe_stroganoff,
             "Swedish",
             "Pork",
             "Unhealthy",
@@ -335,7 +335,7 @@ object RecipeData {
         ),
         Recipe(
             "Chickpea Paprikash",
-            R.drawable.chickpea_paprikash,
+            R.drawable.recipe_chickpea_paprikash,
             "Hungarian",
             "Vegetarian",
             "Neutral",
@@ -363,7 +363,7 @@ object RecipeData {
         ),
         Recipe(
             "Chicken Paprikash",
-            R.drawable.chicken_paprikash,
+            R.drawable.recipe_chicken_paprikash,
             "Hungarian",
             "Chicken",
             "Neutral",
@@ -391,7 +391,7 @@ object RecipeData {
         ),
         Recipe(
             "Spaghetti Bolognese",
-            R.drawable.spaghetti_bolognese,
+            R.drawable.recipe_spaghetti_bolognese,
             "Italian",
             "Vegetarian",
             "Neutral",
@@ -415,7 +415,7 @@ object RecipeData {
         ),
         Recipe(
             "Tagliatelle with Pesto",
-            R.drawable.tagliatelle_with_pesto,
+            R.drawable.recipe_tagliatelle_with_pesto,
             "Italian",
             "Vegetarian",
             "Neutral",
@@ -437,7 +437,7 @@ object RecipeData {
         ),
         Recipe(
             "Veggie burger with Fries",
-            R.drawable.veggie_burger_and_fries,
+            R.drawable.recipe_veggie_burger_and_fries,
             "American",
             "Vegetarian",
             "Unhealthy",

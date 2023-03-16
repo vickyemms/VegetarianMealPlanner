@@ -42,15 +42,21 @@ class GroceryListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Get the groceryList from the MainActivity.
         var groceryList = (activity as MainActivity).groceryList
+
+        // Find the RecyclerView in the layout.
         val recyclerViewGroceryList = view.findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
 
+        // This is a custom ordering of the grocery categories.
         val customOrder = listOf("vegetable", "fruit", "bread", "dairy", "vegetarian",
             "meat", "frozen", "mexican", "asian", "spice", "canned",
             "pasta", "rice", "condiment", "baking", "oil")
 
+        // Sort the groceryList based on the custom order.
         groceryList.sortBy { customOrder.indexOf(it.foodCategory) }
 
+        // Set the adapter for the RecyclerView.
         recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
     }
 
