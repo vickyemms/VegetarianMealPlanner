@@ -1,10 +1,13 @@
 package com.example.foodplanner
 
+import android.content.res.ColorStateList
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -47,9 +50,33 @@ class MainActivity : AppCompatActivity() {
 
     // Handle clicks on the menu items in the ActionBar
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.miFilter -> Toast.makeText(this, "You clicked on Filter", Toast.LENGTH_LONG).show()
+        if (item.itemId == R.id.miFilter) {
+            val filterOptions = arrayOf("Hungarian", "Swedish", "Middle Eastern")
+            val selectedFilters = booleanArrayOf(false, false, false)
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Select Filters")
+            builder.setMultiChoiceItems(filterOptions, selectedFilters) { dialog, which, isChecked ->
+                selectedFilters[which] = isChecked
+                val btn = (dialog as AlertDialog).listView.getChildAt(which)
+                if (isChecked) {
+                    btn.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this, R.color.teal_700))
+                } else {
+                    btn.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this, R.color.teal_200))
+                }
+            }
+            builder.setPositiveButton("Filter") { dialog, which ->
+                Toast.makeText(this, "Applying the filter", Toast.LENGTH_SHORT).show()
+                // Perform the filtering action using the selected filters
+            }
+            builder.setNegativeButton("Cancel") { dialog, which ->
+                Toast.makeText(this, "No filter options were made", Toast.LENGTH_SHORT).show()
+                // Perform any necessary cleanup or default behavior
+            }
+            builder.show()
+            return true
         }
-        return true
+        return super.onOptionsItemSelected(item)
     }
+
+
 }

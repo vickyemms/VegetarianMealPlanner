@@ -50,8 +50,8 @@ class GroceryListFragment : Fragment() {
 
         // This is a custom ordering of the grocery categories.
         val customOrder = listOf("vegetable", "fruit", "bread", "dairy", "vegetarian",
-            "meat", "frozen", "mexican", "asian", "spice", "canned",
-            "pasta", "rice", "condiment", "baking", "oil")
+            "meat", "frozen", "mexican", "asian", "spice", "oil", "condiment", "canned",
+            "pasta", "rice", "baking")
 
         // Sort the groceryList based on the custom order.
         groceryList.sortBy { customOrder.indexOf(it.foodCategory) }
