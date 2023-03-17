@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvCuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cuisine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tbHungarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/filterbtns_toggle_selector"
+        android:text="Hungarian"
+        android:textOff="Hungarian"
+        android:textOn="Hungarian"
+        app:layout_constraintBottom_toBottomOf="@+id/tbSwedish"
+        app:layout_constraintStart_toEndOf="@+id/tbSwedish"
+        app:layout_constraintTop_toTopOf="@+id/tbSwedish" />
+
+    <ToggleButton
+        android:id="@+id/tbSwedish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/filterbtns_toggle_selector"
+        android:text="Swedish"
+        android:textOff="Swedish"
+        android:textOn="Swedish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCuisine" />
+
+    <ToggleButton
+        android:id="@+id/tbAmerican"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/filterbtns_toggle_selector"
+        android:text="American"
+        android:textOff="American"
+        android:textOn="American"
+        app:layout_constraintBottom_toBottomOf="@+id/tbHungarian"
+        app:layout_constraintStart_toEndOf="@+id/tbHungarian"
+        app:layout_constraintTop_toTopOf="@+id/tbHungarian" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
