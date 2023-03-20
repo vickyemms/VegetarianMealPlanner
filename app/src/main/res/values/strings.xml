@@ -1,6 +1,33 @@
 <resources>
     <string name="app_name">Food Planner</string>
-    <string name="found_at_home_header">   Usually found at home</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="found_at_home_header">Usually found at home</string>
+    <string name="add_button">Add</string>
+    <string name="filter_title">Filter</string>
+    <string name="recipe_title">Recipe</string>
+    <string name="calendar_title">Calendar</string>
+    <string name="grocery_list_title">Grocery List</string>
+    <string name="four_portions">(4 portions)</string>
+    <string name="recipe_photo_description">Photo of the recipe</string>
+    <string name="filter_header_cuisine">Cuisine</string>
+    <string name="filter_button_asian">Asian</string>
+    <string name="filter_button_mexican">Mexican</string>
+    <string name="filter_button_middle_eastern">Middle Eastern</string>
+    <string name="filter_button_mediterranean">Mediterranean</string>
+    <string name="filter_button_swedish">Swedish</string>
+    <string name="filter_button_hungarian">Hungarian</string>
+    <string name="filter_button_italian">Italian</string>
+    <string name="filter_button_american">American</string>
+    <string name="filter_header_protein">Protein</string>
+    <string name="filter_button_chickpeas">Chickpeas</string>
+    <string name="filter_button_lentils">Lentils</string>
+    <string name="filter_button_beans">Beans</string>
+    <string name="filter_button_tofu">Tofu</string>
+    <string name="filter_button_soy_protein">Soy protein</string>
+    <string name="filter_button_pea_protein">Pea protein</string>
+    <string name="filter_button_falafel">Falafel</string>
+    <string name="filter_button_no_protein">No protein</string>
+    <string name="filter_header_healthiness">Healthiness</string>
+    <string name="filter_button_healthy">Healthy</string>
+    <string name="filter_button_neutral">Neutral</string>
+    <string name="filter_button_unhealthy">Unhealthy</string>
 </resources>

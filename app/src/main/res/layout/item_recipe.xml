@@ -18,11 +18,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
-        android:text="Recipe Name"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Recipe Name" />
 
     <ImageView
         android:id="@+id/ivRecipePhoto"
@@ -35,7 +35,8 @@
         app:layout_constraintEnd_toStartOf="@+id/tvRecipeCategories"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRecipeName" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRecipeName"
+        android:contentDescription="@string/recipe_photo_description" />
 
     <TextView
         android:id="@+id/tvRecipeCategories"
@@ -46,12 +47,12 @@
         android:ellipsize="end"
         android:maxWidth="120dp"
         android:maxLines="11"
-        android:text="Hungarian, Vegetarian, Healthy"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/btnAddRecipe"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ivRecipePhoto"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hungarian, Vegetarian, Healthy" />
 
     <Button
         android:id="@+id/btnAddRecipe"
@@ -60,7 +61,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="16dp"
-        android:text="Add"
+        android:text="@string/add_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -12,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Cuisine"
+        android:text="@string/filter_header_cuisine"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,9 +24,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Asian"
-        android:textOff="Asian"
-        android:textOn="Asian"
+        android:text="@string/filter_button_asian"
+        android:textOff="@string/filter_button_asian"
+        android:textOn="@string/filter_button_asian"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCuisine" />
 
@@ -37,9 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Mexican"
-        android:textOff="Mexican"
-        android:textOn="Mexican"
+        android:text="@string/filter_button_mexican"
+        android:textOff="@string/filter_button_mexican"
+        android:textOn="@string/filter_button_mexican"
         app:layout_constraintBottom_toBottomOf="@+id/tbAsian"
         app:layout_constraintStart_toEndOf="@+id/tbAsian"
         app:layout_constraintTop_toTopOf="@+id/tbAsian" />
@@ -50,9 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Middle Eastern"
-        android:textOff="Middle Eastern"
-        android:textOn="Middle Eastern"
+        android:text="@string/filter_button_middle_eastern"
+        android:textOff="@string/filter_button_middle_eastern"
+        android:textOn="@string/filter_button_middle_eastern"
         app:layout_constraintBottom_toBottomOf="@+id/tbMexican"
         app:layout_constraintStart_toEndOf="@+id/tbMexican"
         app:layout_constraintTop_toTopOf="@+id/tbMexican" />
@@ -64,9 +63,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Mediterranean"
-        android:textOff="Mediterranean"
-        android:textOn="Mediterranean"
+        android:text="@string/filter_button_mediterranean"
+        android:textOff="@string/filter_button_mediterranean"
+        android:textOn="@string/filter_button_mediterranean"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tbAsian" />
 
@@ -76,9 +75,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Swedish"
-        android:textOff="Swedish"
-        android:textOn="Swedish"
+        android:text="@string/filter_button_swedish"
+        android:textOff="@string/filter_button_swedish"
+        android:textOn="@string/filter_button_swedish"
         app:layout_constraintBottom_toBottomOf="@+id/tbMediterranean"
         app:layout_constraintStart_toEndOf="@+id/tbMediterranean"
         app:layout_constraintTop_toTopOf="@+id/tbMediterranean" />
@@ -89,9 +88,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Hungarian"
-        android:textOff="Hungarian"
-        android:textOn="Hungarian"
+        android:text="@string/filter_button_hungarian"
+        android:textOff="@string/filter_button_hungarian"
+        android:textOn="@string/filter_button_hungarian"
         app:layout_constraintBottom_toBottomOf="@+id/tbSwedish"
         app:layout_constraintStart_toEndOf="@+id/tbSwedish"
         app:layout_constraintTop_toTopOf="@+id/tbSwedish" />
@@ -103,11 +102,36 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Italian"
-        android:textOff="Italian"
-        android:textOn="Italian"
+        android:text="@string/filter_button_italian"
+        android:textOff="@string/filter_button_italian"
+        android:textOn="@string/filter_button_italian"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tbMediterranean" />
+
+    <ToggleButton
+        android:id="@+id/tbAmerican"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/filterbtns_toggle_selector"
+        android:text="@string/filter_button_american"
+        android:textOff="@string/filter_button_american"
+        android:textOn="@string/filter_button_american"
+        app:layout_constraintBottom_toBottomOf="@+id/tbItalian"
+        app:layout_constraintStart_toEndOf="@+id/tbItalian"
+        app:layout_constraintTop_toTopOf="@+id/tbItalian" />
+
+    <TextView
+        android:id="@+id/tvProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/filter_header_protein"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbItalian" />
 
     <ToggleButton
         android:id="@+id/tbChickpeas"
@@ -116,9 +140,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Chickpeas"
-        android:textOff="Chickpeas"
-        android:textOn="Chickpeas"
+        android:text="@string/filter_button_chickpeas"
+        android:textOff="@string/filter_button_chickpeas"
+        android:textOn="@string/filter_button_chickpeas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvProtein" />
 
@@ -129,9 +153,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Tofu"
-        android:textOff="Tofu"
-        android:textOn="Tofu"
+        android:text="@string/filter_button_tofu"
+        android:textOff="@string/filter_button_tofu"
+        android:textOn="@string/filter_button_tofu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tbChickpeas" />
 
@@ -142,23 +166,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Pea protein"
-        android:textOff="Pea protein"
-        android:textOn="Pea protein"
+        android:text="@string/filter_button_pea_protein"
+        android:textOff="@string/filter_button_pea_protein"
+        android:textOn="@string/filter_button_pea_protein"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tbTofu" />
-
-    <TextView
-        android:id="@+id/tvProtein"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Protein"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbItalian" />
 
     <ToggleButton
         android:id="@+id/tbFalafel"
@@ -166,9 +178,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Falafel"
-        android:textOff="Falafel"
-        android:textOn="Falafel"
+        android:text="@string/filter_button_falafel"
+        android:textOff="@string/filter_button_falafel"
+        android:textOn="@string/filter_button_falafel"
         app:layout_constraintBottom_toBottomOf="@+id/tbTofu"
         app:layout_constraintStart_toEndOf="@+id/tbTofu"
         app:layout_constraintTop_toTopOf="@+id/tbTofu" />
@@ -179,9 +191,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Soy protein"
-        android:textOff="Soy protein"
-        android:textOn="Soy protein"
+        android:text="@string/filter_button_soy_protein"
+        android:textOff="@string/filter_button_soy_protein"
+        android:textOn="@string/filter_button_soy_protein"
         app:layout_constraintBottom_toBottomOf="@+id/tbFalafel"
         app:layout_constraintStart_toEndOf="@+id/tbFalafel"
         app:layout_constraintTop_toTopOf="@+id/tbFalafel" />
@@ -192,25 +204,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="No protein"
-        android:textOff="No protein"
-        android:textOn="No protein"
+        android:text="@string/filter_button_no_protein"
+        android:textOff="@string/filter_button_no_protein"
+        android:textOn="@string/filter_button_no_protein"
         app:layout_constraintBottom_toBottomOf="@+id/tbPeaProtein"
         app:layout_constraintStart_toEndOf="@+id/tbPeaProtein"
         app:layout_constraintTop_toTopOf="@+id/tbPeaProtein" />
 
-    <ToggleButton
-        android:id="@+id/tbAmerican"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:background="@drawable/filterbtns_toggle_selector"
-        android:text="American"
-        android:textOff="American"
-        android:textOn="American"
-        app:layout_constraintBottom_toBottomOf="@+id/tbItalian"
-        app:layout_constraintStart_toEndOf="@+id/tbItalian"
-        app:layout_constraintTop_toTopOf="@+id/tbItalian" />
+
 
     <ToggleButton
         android:id="@+id/tbLentils"
@@ -218,9 +219,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Lentils"
-        android:textOff="Lentils"
-        android:textOn="Lentils"
+        android:text="@string/filter_button_lentils"
+        android:textOff="@string/filter_button_lentils"
+        android:textOn="@string/filter_button_lentils"
         app:layout_constraintBottom_toBottomOf="@+id/tbBeans"
         app:layout_constraintStart_toEndOf="@+id/tbBeans"
         app:layout_constraintTop_toTopOf="@+id/tbBeans" />
@@ -231,9 +232,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Beans"
-        android:textOff="Beans"
-        android:textOn="Beans"
+        android:text="@string/filter_button_beans"
+        android:textOff="@string/filter_button_beans"
+        android:textOn="@string/filter_button_beans"
         app:layout_constraintBottom_toBottomOf="@+id/tbChickpeas"
         app:layout_constraintStart_toEndOf="@+id/tbChickpeas"
         app:layout_constraintTop_toTopOf="@+id/tbChickpeas" />
@@ -244,7 +245,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Healthiness"
+        android:text="@string/filter_header_healthiness"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -257,9 +258,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Healthy"
-        android:textOff="Healthy"
-        android:textOn="Healthy"
+        android:text="@string/filter_button_healthy"
+        android:textOff="@string/filter_button_healthy"
+        android:textOn="@string/filter_button_healthy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHealthiness" />
 
@@ -269,9 +270,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Neutral"
-        android:textOff="Neutral"
-        android:textOn="Neutral"
+        android:text="@string/filter_button_neutral"
+        android:textOff="@string/filter_button_neutral"
+        android:textOn="@string/filter_button_neutral"
         app:layout_constraintBottom_toBottomOf="@+id/tbHealthy"
         app:layout_constraintStart_toEndOf="@+id/tbHealthy"
         app:layout_constraintTop_toTopOf="@+id/tbHealthy" />
@@ -282,9 +283,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:background="@drawable/filterbtns_toggle_selector"
-        android:text="Unhealthy"
-        android:textOff="Unhealthy"
-        android:textOn="Unhealthy"
+        android:text="@string/filter_button_unhealthy"
+        android:textOff="@string/filter_button_unhealthy"
+        android:textOn="@string/filter_button_unhealthy"
         app:layout_constraintBottom_toBottomOf="@+id/tbNeutral"
         app:layout_constraintStart_toEndOf="@+id/tbNeutral"
         app:layout_constraintTop_toTopOf="@+id/tbNeutral" />
