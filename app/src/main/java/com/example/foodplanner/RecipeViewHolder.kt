@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     // Initialize the UI components for the recipe item
-    val tvRecipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
-    val ivRecipePhoto: ImageView = itemView.findViewById(R.id.ivRecipePhoto)
-    val tvRecipeCategories: TextView = itemView.findViewById(R.id.tvRecipeCategories)
+    private val tvRecipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
+    private val ivRecipePhoto: ImageView = itemView.findViewById(R.id.ivRecipePhoto)
+    private val tvRecipeCategories: TextView = itemView.findViewById(R.id.tvRecipeCategories)
     val btnAddRecipe: Button = itemView.findViewById(R.id.btnAddRecipe)
 
 
