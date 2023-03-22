@@ -22,10 +22,6 @@ private const val ARG_PARAM2 = "param2"
  */
 class GroceryListFragment : Fragment() {
 
-    private lateinit var btnAdd: Button
-    private  lateinit var btnRemove: Button
-    private lateinit var btnClear: Button
-
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -50,26 +46,19 @@ class GroceryListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Get the groceryList from the MainActivity.
         val groceryList = (activity as MainActivity).groceryList
-
-        // Find the RecyclerView in the layout.
         val recyclerViewGroceryList = view.findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
+        val btnAdd = view.findViewById<Button>(R.id.btnAdd)
+        val btnRemove = view.findViewById<Button>(R.id.btnRemove)
+        val btnClear = view.findViewById<Button>(R.id.btnClear)
 
-        // This is a custom ordering of the grocery categories.
         val customOrder = listOf("vegetable", "fruit", "bread", "dairy", "vegetarian",
             "meat", "frozen", "mexican", "asian", "spice", "oil", "condiment", "canned",
             "pasta", "rice", "baking")
 
-        // Sort the groceryList based on the custom order.
         groceryList.sortBy { customOrder.indexOf(it.foodCategory) }
 
-        // Set the adapter for the RecyclerView.
         recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
-
-        btnAdd = view.findViewById(R.id.btnAdd)
-        btnRemove = view.findViewById(R.id.btnRemove)
-        btnClear = view.findViewById(R.id.btnClear)
 
         btnAdd.setOnClickListener(){
             addToGroceryList()
@@ -95,26 +84,24 @@ class GroceryListFragment : Fragment() {
 
         val recyclerViewGroceryList = requireView().findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
 
-        // If any checkbox is checked, show the alert dialog
         val alertDialogBuilder = AlertDialog.Builder(requireContext())
-        alertDialogBuilder.setTitle("Remove All Groceries")
+        alertDialogBuilder.setTitle("Remove all groceries")
         alertDialogBuilder.setMessage("Are you sure you want to remove all groceries?")
         alertDialogBuilder.setPositiveButton("Yes") { _, _ ->
             groceryList.clear()
             recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
             recyclerViewGroceryList.adapter?.notifyDataSetChanged()
-            Toast.makeText(requireContext(), "All groceries removed.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "All groceries removed", Toast.LENGTH_SHORT).show()
         }
         alertDialogBuilder.setNegativeButton("Cancel") { _, _ ->
-            Toast.makeText(requireContext(), "Did not remove any groceries.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Did not remove any groceries", Toast.LENGTH_SHORT).show()
         }
         alertDialogBuilder.create().show()
 
     }
 
-    fun removeFromGroceryList() {
+    private fun removeFromGroceryList() {
 
-        // Get the groceryList from the MainActivity.
         val groceryList = (activity as MainActivity).groceryList
 
         if (groceryList.isEmpty()) {
@@ -122,10 +109,8 @@ class GroceryListFragment : Fragment() {
             return
         }
 
-        // Find the RecyclerView in the layout.
         val recyclerViewGroceryList = requireView().findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
 
-        // Check if any checkbox is checked and store the checked checkboxes in a separate list
         val checkedItems = mutableListOf<String>()
         for (i in 0 until recyclerViewGroceryList.childCount) {
             val viewHolder = recyclerViewGroceryList.findViewHolderForAdapterPosition(i) as? GroceryListViewHolder
@@ -140,10 +125,9 @@ class GroceryListFragment : Fragment() {
             return
         }
 
-        // If any checkbox is checked, show the alert dialog
         val alertDialogBuilder = AlertDialog.Builder(requireContext())
-        alertDialogBuilder.setTitle("Remove Grocery")
-        alertDialogBuilder.setMessage("Are you sure you want to remove the groceries?")
+        alertDialogBuilder.setTitle("Remove groceries")
+        alertDialogBuilder.setMessage("Are you sure you want to remove these groceries?")
         alertDialogBuilder.setPositiveButton("Yes") { _, _ ->
             checkedItems.forEach { checkedItem ->
                 groceryList.removeAll { groceryItem -> groceryItem.toString() == checkedItem }
@@ -151,10 +135,10 @@ class GroceryListFragment : Fragment() {
                 recyclerViewGroceryList.adapter?.notifyDataSetChanged()
             }
             // Do something else after removing checked items from grocery list
-            Toast.makeText(requireContext(), "Groceries removed.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Groceries removed", Toast.LENGTH_SHORT).show()
         }
         alertDialogBuilder.setNegativeButton("Cancel") { _, _ ->
-            Toast.makeText(requireContext(), "Did not remove any groceries.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Did not remove any groceries", Toast.LENGTH_SHORT).show()
         }
         alertDialogBuilder.create().show()
     }

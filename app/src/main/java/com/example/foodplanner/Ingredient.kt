@@ -18,7 +18,6 @@ data class Ingredient(
         return "$amountString $unit $name"
     }
 
-
     fun increaseAmount(increment: Double){
         amount += increment
     }

@@ -25,13 +25,8 @@ private const val ARG_PARAM2 = "param2"
 
 class RecipesFragment : Fragment(), MenuProvider {
 
-    // Get the list of recipes from RecipeData
     private val recipes = RecipeData.recipes
-
-    //Declare recyclerViewRecipes
     private lateinit var recyclerViewRecipes: RecyclerView
-
-    // Define a variable to hold the filtered list of recipes
     private var filteredRecipes: List<Recipe> = listOf()
 
     // TODO: Rename and change types of parameters
@@ -51,23 +46,16 @@ class RecipesFragment : Fragment(), MenuProvider {
         savedInstanceState: Bundle?
     ): View? {
 
-        // Get a reference to the parent activity that implements the MenuHost interface
         val menuHost: MenuHost = requireActivity()
-
-        // Add this fragment as a menu provider to the parent activity
-        // This allows the fragment to handle menu-related events
         menuHost.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_recipes, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //Find recycler view in the layout
         recyclerViewRecipes = view.findViewById(R.id.recyclerViewRecipes)
-        // Set recycler views adapter to a new instance of RecipeAdapter
         recyclerViewRecipes.adapter = RecipeAdapter(recipes, requireContext())
 
     }
@@ -75,17 +63,12 @@ class RecipesFragment : Fragment(), MenuProvider {
     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
         menuInflater.inflate(R.menu.action_bar_menu, menu)
 
-        // Get a reference to the filter menu item
         val filterMenuItem = menu.findItem(R.id.miFilter)
-
-        // Set the click listener for the filter menu item
         filterMenuItem.setOnMenuItemClickListener {
 
-            // Show the filter dialog
             showFilterDialog()
-
-            // Return true to indicate that the click event has been handled
             true
+
         }
     }
 
@@ -95,22 +78,13 @@ class RecipesFragment : Fragment(), MenuProvider {
 
     private fun showFilterDialog() {
 
-        // Create a new AlertDialog Builder
         val builder = AlertDialog.Builder(requireContext())
-
-        // Set the dialog title
         builder.setTitle("Filter Recipes")
-
-        // Get the layout inflater
         val inflater = requireActivity().layoutInflater
-
-        // Inflate the dialog view
         val dialogView = inflater.inflate(R.layout.dialog_filter, null)
 
-        // Add the dialog view to the builder
         builder.setView(dialogView)
 
-        // Get references to the filter UI components
         val tbAsian = dialogView.findViewById<ToggleButton>(R.id.tbAsian)
         val tbMexican = dialogView.findViewById<ToggleButton>(R.id.tbMexican)
         val tbMiddleEastern = dialogView.findViewById<ToggleButton>(R.id.tbMiddleEastern)
@@ -131,11 +105,8 @@ class RecipesFragment : Fragment(), MenuProvider {
         val tbNeutral = dialogView.findViewById<ToggleButton>(R.id.tbNeutral)
         val tbUnhealthy = dialogView.findViewById<ToggleButton>(R.id.tbUnhealthy)
 
-
-        // Set the positive button click listener
         builder.setPositiveButton("Apply") { _, _ ->
 
-            // Get the selected filter options
             val isAsian = tbAsian.isChecked
             val isMexican = tbMexican.isChecked
             val isMiddleEastern = tbMiddleEastern.isChecked
@@ -156,7 +127,6 @@ class RecipesFragment : Fragment(), MenuProvider {
             val isNeutral = tbNeutral.isChecked
             val isUnhealthy = tbUnhealthy.isChecked
 
-            // Filter the recipe list based on the selected options
             filteredRecipes = recipes.filter { recipe ->
                 shouldIncludeRecipe(recipe, isAsian, isMexican, isMiddleEastern, isMediterranean,
                     isSwedish, isHungarian, isItalian, isAmerican, hasChickpeas, hasLentils,
@@ -164,27 +134,19 @@ class RecipesFragment : Fragment(), MenuProvider {
                     isHealthy, isNeutral, isUnhealthy)
             }
 
-            //Update recipes
             recyclerViewRecipes.adapter = RecipeAdapter(filteredRecipes, requireContext())
-
-            // Notify the RecyclerView adapter that the recipe list has changed
             recyclerViewRecipes.adapter?.notifyDataSetChanged()
 
-            // Show a toast to indicate that the filter has been applied
             Toast.makeText(requireContext(), "Applying filter", Toast.LENGTH_SHORT).show()
         }
 
-        // Set the negative button click listener
         builder.setNegativeButton("Cancel") { _, _ ->
-            // Show a toast when the cancel button is clicked
             Toast.makeText(requireContext(), "No filter applied", Toast.LENGTH_SHORT).show()
         }
 
-        // Show the dialog
         builder.show()
     }
 
-    //Determines whether a given recipe should be included in the filtered list based on the provided
     private fun shouldIncludeRecipe(recipe: Recipe, isAsian: Boolean, isMexican: Boolean,
                                     isMiddleEastern: Boolean, isMediterranean: Boolean,
                                     isSwedish: Boolean, isHungarian: Boolean, isItalian: Boolean,
