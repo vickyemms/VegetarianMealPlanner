@@ -18,7 +18,7 @@ class GroceryListAdapter(private val groceryList: MutableList<Ingredient>) : Rec
     // It sets the text of the TextView in the ViewHolder to the string representation of the current grocery item.
     override fun onBindViewHolder(holder: GroceryListViewHolder, position: Int) {
         val grocery = groceryList[position]
-        holder.tvGrocery.text = grocery.toString()
+        holder.cbGrocery.text = grocery.toString()
     }
 
     // This function returns the number of items in the groceryList.

@@ -30,4 +30,7 @@
     <string name="filter_button_healthy">Healthy</string>
     <string name="filter_button_neutral">Neutral</string>
     <string name="filter_button_unhealthy">Unhealthy</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_add">Add</string>
 </resources>

@@ -369,7 +369,7 @@ object RecipeData {
             listOf(
                 Ingredient("Onion", 1.0, "", "vegetable", false),
                 Ingredient("Tomato", 2.0, "", "vegetable", false),
-                Ingredient("Red bell pepper", 2.0, "", "vegetable", false),
+                Ingredient("Red bell pepper", 1.0, "", "vegetable", false),
                 Ingredient("Carrot", 2.0, "", "vegetable", false),
                 Ingredient("Parsnip", 2.0, "", "vegetable", false),
                 Ingredient("Potatoes", 6.0, "", "vegetable", false),

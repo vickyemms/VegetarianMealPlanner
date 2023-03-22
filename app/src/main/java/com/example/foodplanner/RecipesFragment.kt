@@ -185,7 +185,13 @@ class RecipesFragment : Fragment(), MenuProvider {
     }
 
     //Determines whether a given recipe should be included in the filtered list based on the provided
-    private fun shouldIncludeRecipe(recipe: Recipe, isAsian: Boolean, isMexican: Boolean, isMiddleEastern: Boolean, isMediterranean: Boolean, isSwedish: Boolean, isHungarian: Boolean, isItalian: Boolean, isAmerican: Boolean, hasChickpeas: Boolean, hasLentils: Boolean, hasBeans: Boolean, hasTofu: Boolean, hasSoyProtein: Boolean, hasPeaProtein: Boolean, hasNoProtein: Boolean, hasFalafel: Boolean, isHealthy: Boolean, isNeutral: Boolean, isUnhealthy: Boolean): Boolean {
+    private fun shouldIncludeRecipe(recipe: Recipe, isAsian: Boolean, isMexican: Boolean,
+                                    isMiddleEastern: Boolean, isMediterranean: Boolean,
+                                    isSwedish: Boolean, isHungarian: Boolean, isItalian: Boolean,
+                                    isAmerican: Boolean, hasChickpeas: Boolean, hasLentils: Boolean,
+                                    hasBeans: Boolean, hasTofu: Boolean, hasSoyProtein: Boolean,
+                                    hasPeaProtein: Boolean, hasNoProtein: Boolean, hasFalafel: Boolean,
+                                    isHealthy: Boolean, isNeutral: Boolean, isUnhealthy: Boolean): Boolean {
         if (isAsian && recipe.cuisine != "Asian") return false
         if (isMexican && recipe.cuisine != "Mexican") return false
         if (isMiddleEastern && recipe.cuisine != "Middle Eastern") return false
