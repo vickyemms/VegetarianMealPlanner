@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvIngredientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ingredient"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etIngredientName"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:hint="Name of ingredient"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIngredientName"
+        app:layout_constraintStart_toEndOf="@+id/tvIngredientName"
+        app:layout_constraintTop_toTopOf="@+id/tvIngredientName" />
+
+    <TextView
+        android:id="@+id/tvIngredientAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Amount"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngredientName" />
+
+    <EditText
+        android:id="@+id/etIngredientAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:hint="Amount of ingredients"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIngredientAmount"
+        app:layout_constraintStart_toEndOf="@+id/tvIngredientAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvIngredientAmount" />
+
+    <TextView
+        android:id="@+id/tvIngredientUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Unit"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngredientAmount" />
+
+    <EditText
+        android:id="@+id/etIngredientUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:hint="Unit of measurement"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIngredientUnit"
+        app:layout_constraintStart_toEndOf="@+id/tvIngredientUnit"
+        app:layout_constraintTop_toTopOf="@+id/tvIngredientUnit" />
+
+    <TextView
+        android:id="@+id/tvIngredientFoodCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Food Category"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngredientUnit" />
+
+    <Spinner
+        android:id="@+id/spFoodCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:entries="@array/food_category_array"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIngredientFoodCategory"
+        app:layout_constraintStart_toEndOf="@+id/tvIngredientFoodCategory"
+        app:layout_constraintTop_toTopOf="@+id/tvIngredientFoodCategory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

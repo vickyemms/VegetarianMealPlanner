@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
@@ -33,6 +35,7 @@ class GroceryListFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
     }
 
     override fun onCreateView(
@@ -47,6 +50,7 @@ class GroceryListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val groceryList = (activity as MainActivity).groceryList
+
         val recyclerViewGroceryList = view.findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
         val btnAdd = view.findViewById<Button>(R.id.btnAdd)
         val btnRemove = view.findViewById<Button>(R.id.btnRemove)
@@ -60,15 +64,15 @@ class GroceryListFragment : Fragment() {
 
         recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
 
-        btnAdd.setOnClickListener(){
+        btnAdd.setOnClickListener{
             addToGroceryList()
         }
 
-        btnRemove.setOnClickListener(){
+        btnRemove.setOnClickListener{
             removeFromGroceryList()
         }
 
-        btnClear.setOnClickListener(){
+        btnClear.setOnClickListener{
             clearGroceryList()
         }
     }
@@ -134,8 +138,8 @@ class GroceryListFragment : Fragment() {
                 recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
                 recyclerViewGroceryList.adapter?.notifyDataSetChanged()
             }
-            // Do something else after removing checked items from grocery list
             Toast.makeText(requireContext(), "Groceries removed", Toast.LENGTH_SHORT).show()
+
         }
         alertDialogBuilder.setNegativeButton("Cancel") { _, _ ->
             Toast.makeText(requireContext(), "Did not remove any groceries", Toast.LENGTH_SHORT).show()
@@ -145,6 +149,47 @@ class GroceryListFragment : Fragment() {
 
 
     private fun addToGroceryList() {
+
+        val groceryList = (activity as MainActivity).groceryList
+        val recyclerViewGroceryList = requireView().findViewById<RecyclerView>(R.id.recyclerViewGroceryList)
+
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setTitle("Add ingredient")
+        val inflater = requireActivity().layoutInflater
+        val dialogView = inflater.inflate(R.layout.dialog_add_ingredient, null)
+
+        builder.setView(dialogView)
+
+
+        val etIngredientName = dialogView.findViewById<EditText>(R.id.etIngredientName)
+        val etIngredientAmount = dialogView.findViewById<EditText>(R.id.etIngredientAmount)
+        val etIngredientUnit = dialogView.findViewById<EditText>(R.id.etIngredientUnit)
+        val spFoodCategory = dialogView.findViewById<Spinner>(R.id.spFoodCategory)
+
+        builder.setPositiveButton("Add") { _, _ ->
+
+            val name = etIngredientName.text.toString()
+            val amount = etIngredientAmount.text.toString().toDouble()
+            val unit = etIngredientUnit.text.toString()
+            val foodCategory = spFoodCategory.selectedItem.toString()
+
+            val newIngredient = Ingredient(name, amount, unit, foodCategory, false)
+            groceryList.add(newIngredient)
+            val customOrder = listOf("vegetable", "fruit", "bread", "dairy", "vegetarian",
+                "meat", "frozen", "mexican", "asian", "spice", "oil", "condiment", "canned",
+                "pasta", "rice", "baking")
+
+            groceryList.sortBy { customOrder.indexOf(it.foodCategory) }
+            recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
+            recyclerViewGroceryList.adapter?.notifyDataSetChanged()
+            Toast.makeText(requireContext(), "Added ingredient", Toast.LENGTH_SHORT).show()
+        }
+
+        builder.setNegativeButton("Cancel") { _, _ ->
+            Toast.makeText(requireContext(), "No ingredient added", Toast.LENGTH_SHORT).show()
+        }
+
+        builder.show()
 
     }
 
@@ -158,6 +203,7 @@ class GroceryListFragment : Fragment() {
          * @return A new instance of fragment GroceryListFragment.
          */
         // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             GroceryListFragment().apply {

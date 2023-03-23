@@ -33,4 +33,26 @@
     <string name="button_clear">Clear</string>
     <string name="button_remove">Remove</string>
     <string name="button_add">Add</string>
+    <string-array name="food_category_array">
+        <item>Vegetable</item>
+        <item>Fruit</item>
+        <item>Bread</item>
+        <item>Dairy</item>
+        <item>Vegetarian</item>
+        <item>Meat</item>
+        <item>Frozen</item>
+        <item>Mexican</item>
+        <item>Asian</item>
+        <item>Spice</item>
+        <item>Oil</item>
+        <item>Condiment</item>
+        <item>Canned</item>
+        <item>Pasta</item>
+        <item>Rice</item>
+        <item>Baking</item>
+    </string-array>
+    <string-array name="found_at_home_array">
+        <item>True</item>
+        <item>False</item>
+    </string-array>
 </resources>
