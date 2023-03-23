@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="190dp">
+    android:layout_height="wrap_content"
+    android:padding="7dp">
 
     <View
         android:layout_width="match_parent"
@@ -62,6 +63,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="16dp"
         android:text="@string/add_button"
+        android:backgroundTint="@color/teal_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

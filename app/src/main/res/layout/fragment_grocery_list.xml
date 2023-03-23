@@ -24,6 +24,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:text="@string/button_clear"
+        android:backgroundTint="@color/teal_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="5dp"
         android:text="@string/button_remove"
+        android:backgroundTint="@color/teal_dark"
         app:layout_constraintBottom_toBottomOf="@+id/btnClear"
         app:layout_constraintEnd_toStartOf="@+id/btnClear"
         app:layout_constraintTop_toTopOf="@+id/btnClear" />
@@ -43,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="5dp"
         android:text="@string/button_add"
+        android:backgroundTint="@color/teal_dark"
         app:layout_constraintBottom_toBottomOf="@+id/btnRemove"
         app:layout_constraintEnd_toStartOf="@+id/btnRemove"
         app:layout_constraintTop_toTopOf="@+id/btnRemove" />
