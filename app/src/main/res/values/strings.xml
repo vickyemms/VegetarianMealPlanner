@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Food Planner</string>
+    <string name="bottom_menu_recipe">Recipe</string>
+    <string name="bottom_menu_planner">Planner</string>
+    <string name="bottom_menu_grocery_list">Grocery List</string>
+    <string name="recipes_add_button">Add</string>
     <string name="found_at_home_header">Usually found at home</string>
-    <string name="add_button">Add</string>
-    <string name="filter_title">Filter</string>
-    <string name="recipe_title">Recipe</string>
-    <string name="calendar_title">Calendar</string>
-    <string name="grocery_list_title">Grocery List</string>
     <string name="four_portions">(4 portions)</string>
     <string name="recipe_photo_description">Photo of the recipe</string>
+    <string name="filter_title">Filter</string>
     <string name="filter_header_cuisine">Cuisine</string>
     <string name="filter_button_asian">Asian</string>
     <string name="filter_button_mexican">Mexican</string>
@@ -30,29 +30,32 @@
     <string name="filter_button_healthy">Healthy</string>
     <string name="filter_button_neutral">Neutral</string>
     <string name="filter_button_unhealthy">Unhealthy</string>
-    <string name="button_clear">Clear</string>
-    <string name="button_remove">Remove</string>
-    <string name="button_add">Add</string>
+    <string name="grocery_list_button_clear">Clear</string>
+    <string name="grocery_list_button_remove">Remove</string>
+    <string name="grocery_list_button_add">Add</string>
+    <string name="add_ingredient_ingredient">Ingredient</string>
+    <string name="add_ingredient_ingredient_hint">Name of ingredient</string>
+    <string name="add_ingredient_amount">Amount</string>
+    <string name="add_ingredient_amount_hint">Amount of ingredients</string>
+    <string name="add_ingredient_unit">Unit</string>
+    <string name="add_ingredient_unit_hint">Unit of measurement</string>
+    <string name="add_ingredient_food_category">Food category</string>
     <string-array name="food_category_array">
-        <item>Vegetable</item>
-        <item>Fruit</item>
-        <item>Bread</item>
-        <item>Dairy</item>
-        <item>Vegetarian</item>
-        <item>Meat</item>
-        <item>Frozen</item>
-        <item>Mexican</item>
-        <item>Asian</item>
-        <item>Spice</item>
-        <item>Oil</item>
-        <item>Condiment</item>
-        <item>Canned</item>
-        <item>Pasta</item>
-        <item>Rice</item>
-        <item>Baking</item>
-    </string-array>
-    <string-array name="found_at_home_array">
-        <item>True</item>
-        <item>False</item>
+        <item>vegetable</item>
+        <item>fruit</item>
+        <item>bread</item>
+        <item>dairy</item>
+        <item>vegetarian</item>
+        <item>meat</item>
+        <item>frozen</item>
+        <item>mexican</item>
+        <item>asian</item>
+        <item>spice</item>
+        <item>oil</item>
+        <item>condiment</item>
+        <item>canned</item>
+        <item>pasta</item>
+        <item>rice</item>
+        <item>baking</item>
     </string-array>
 </resources>

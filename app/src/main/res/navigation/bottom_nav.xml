@@ -11,8 +11,8 @@
         android:label="Recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
-        android:id="@+id/calendarFragment"
-        android:name="com.example.foodplanner.CalendarFragment"
+        android:id="@+id/plannerFragment"
+        android:name="com.example.foodplanner.PlannerFragment"
         android:label="Calendar"
         tools:layout="@layout/fragment_calendar" />
     <fragment

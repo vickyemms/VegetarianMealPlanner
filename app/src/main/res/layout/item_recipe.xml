@@ -31,12 +31,12 @@
         android:layout_height="120dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:src="@drawable/recipe_food"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvRecipeCategories"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRecipeName"
+        tools:srcCompat="@drawable/recipe_food"
         android:contentDescription="@string/recipe_photo_description" />
 
     <TextView
@@ -62,7 +62,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/add_button"
+        android:text="@string/recipes_add_button"
         android:backgroundTint="@color/teal_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
