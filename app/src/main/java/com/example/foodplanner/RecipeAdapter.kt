@@ -25,6 +25,7 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
         holder.btnAddRecipe.setOnClickListener {
 
             val groceryList = (context as MainActivity).groceryList
+            val meals = context.meals
 
             val builder = AlertDialog.Builder(holder.itemView.context)
             builder.setTitle("Add Ingredients (4 portions)")
@@ -90,6 +91,21 @@ class RecipeAdapter(private val recipes: List<Recipe>, private val context: Cont
 
                     }
                 }
+                val newMeal = Meal(recipe.name, 4)
+                var foundMeal = false
+
+                for (meal in meals) {
+                    if (newMeal.recipeName == meal.recipeName) {
+                        meal.increasePortions()
+                        foundMeal = true
+                        break
+                    }
+                }
+
+                if (!foundMeal) {
+                    meals.add(newMeal)
+                }
+
                 Toast.makeText(
                     holder.itemView.context,
                     "You added ${recipe.name} to your grocery list",
