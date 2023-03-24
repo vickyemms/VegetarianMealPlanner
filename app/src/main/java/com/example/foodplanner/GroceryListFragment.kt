@@ -94,7 +94,7 @@ class GroceryListFragment : Fragment() {
         alertDialogBuilder.setPositiveButton("Yes") { _, _ ->
             groceryList.clear()
             recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
-            recyclerViewGroceryList.adapter?.notifyDataSetChanged()
+            recyclerViewGroceryList.adapter?.notifyItemRangeRemoved(0, groceryList.size - 1)
             Toast.makeText(requireContext(), "All groceries removed", Toast.LENGTH_SHORT).show()
         }
         alertDialogBuilder.setNegativeButton("Cancel") { _, _ ->
@@ -181,7 +181,8 @@ class GroceryListFragment : Fragment() {
 
             groceryList.sortBy { customOrder.indexOf(it.foodCategory) }
             recyclerViewGroceryList.adapter = GroceryListAdapter(groceryList)
-            recyclerViewGroceryList.adapter?.notifyDataSetChanged()
+            val position = groceryList.indexOf(newIngredient)
+            recyclerViewGroceryList.adapter?.notifyItemInserted(position)
             Toast.makeText(requireContext(), "Added ingredient", Toast.LENGTH_SHORT).show()
         }
 
